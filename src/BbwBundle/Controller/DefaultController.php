@@ -1,0 +1,17 @@
+<?php
+
+namespace BbwBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
+class DefaultController extends Controller
+{
+    /**
+     * @Route("/bbw")
+     */
+    public function indexAction()
+    {
+        return $this->render('BbwBundle:Bbw:bbw.html.twig');
+    }
+}
